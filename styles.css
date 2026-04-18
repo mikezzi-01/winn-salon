@@ -353,7 +353,7 @@ nav{
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    border-radius: 1em;
+    border-radius: inherit;
 
 }
 
