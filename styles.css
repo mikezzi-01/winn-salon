@@ -202,7 +202,7 @@ nav{
 .intro p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     /* text-align: center; */
-    padding: 0 1em;
+    /* padding: 0 1em; */
     font-weight: 100;
     font-size: 1.1em;
 }
@@ -443,7 +443,7 @@ nav{
 .service-items .item{
     width: 10em;
     height: 13em;
-    background-color: #fff;
+    background-color: #ffddff;
     padding: 0.3em;
     /* border: 1.5px solid #ff1299; */
     border-radius: 1em;
@@ -530,13 +530,13 @@ nav{
     display: grid;
     width: 60vw;
     grid-template-columns: 2fr 2fr;
-    grid-template-rows: 15em 15em 15em;
+    grid-template-rows: 15em 15em;
     gap: 1em;
     justify-content: center;
 }
 
 .work-container .sample{
-    border-radius: 2em;
+    border-radius: 1em;
     overflow: hidden;
     object-position: top;
     box-shadow: 0 0 15px 2px rgba(255, 18, 153, 0.3);
