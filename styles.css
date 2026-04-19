@@ -121,23 +121,7 @@ nav{
     background-color: rgba(225, 255, 255, 0); 
 }
 
-
-
-@media (max-width: 650px) {
-    .nav-items{
-        display: none;
-    }
-
-    .book-btn{
-        display: none;
-        /* min-width: 5em; */
-    }
-
-    .hamburger{
-        display: block;
-    }
-
-    .mobile-menu{
+.mobile-menu{
         width: 9em;
         height: 10em;
         
@@ -154,6 +138,22 @@ nav{
         position: relative;
         transform: translateX(100%);
         transition: transform 0.3s ease;
+    }
+
+
+
+@media (max-width: 650px) {
+    .nav-items{
+        display: none;
+    }
+
+    .book-btn{
+        display: none;
+        /* min-width: 5em; */
+    }
+
+    .hamburger{
+        display: block;
     }
 
     .mobile-menu a{
