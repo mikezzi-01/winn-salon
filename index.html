@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Winn's hairs</title>
+    <noscript>You need javascript to run this page</noscript>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -26,10 +27,10 @@
                     <i class="fas fa-bars" id="menuIcon"></i>
                 </button>
             </div>
-            <div class="mobile-menu">
+            <div id="moblieMenu" class="mobile-menu">
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
-                <a href="">Our Works</a>
+                <a href="#work">Our Work</a>
             </div>
         </nav>
     </header>
@@ -97,5 +98,20 @@
             <p>&copy; 2026 Winn's Salon. We are here to help you be the best you, you can be</p>
         </div>
     </footer>
+    <script>
+        // console.log('javascritpt loaded')
+        const btn = document.getElementById('hamburger');
+        const menu = document.getElementById('moblieMenu');
+
+        btn.addEventListener('click', () =>{
+            menu.classList.toggle('open');
+        });
+
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                btn.classList.remove('open');
+            });
+        });
+    </script>
 </body>
 </html>
